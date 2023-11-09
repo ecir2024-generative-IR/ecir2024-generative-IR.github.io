@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIGIR-AP 2023 Tutorial: Recent Advances in Generative Information Retrieval</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">
+              <span style="font-size: 80%">SIGIR-AP 2023 Tutorial:</span><br />
+              Recent Advances in Generative Information Retrieval
+            </h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <table>
+            <tr>
+                <!-- <th scope="row">TR-7</th> -->
+                <td width="25%" style="text-align: center; padding: 10px"><img width="150px" height="150px" src="static/imgs/profile_ruqing.jpg"></td>
+                <td width="25%" style="text-align: center; padding: 10px"><img width="150px" height="150px" src="static/imgs/profile_ruqing.jpg"></td>
+                <td width="25%" style="text-align: center; padding: 10px"><img width="150px" height="150px" src="static/imgs/profile_jiafeng.jpg"></td>
+                <td width="25%" style="text-align: center; padding: 10px"><img width="150px" height="150px" src="static/imgs/profile_mdr.jpg"></td>
+            </tr>
+              <tr>
+                <!-- <th scope="row">TR-7</th> -->
+                <td width="25%" style="text-align: center"><a href="" style="border-radius: 50%">Yubao Tang</a><sup>1</sup>,</td>
+                <td width="25%" style="text-align: center"><a href="https://daqingchong.github.io/" style="border-radius: 50%">Ruqing Zhang</a><sup>1</sup>,</td>
+                <td width="25%" style="text-align: center"><a href="http://www.bigdatalab.ac.cn/gjf/" style="border-radius: 50%">Jiafeng Guo</a><sup>1</sup>,</td>
+                <td width="25%" style="text-align: center"><a href="https://staff.fnwi.uva.nl/m.derijke/" style="border-radius: 50%">Maarten de Rijke</a><sup>2</sup></td>
+              </tr>
+            </table>
+            </span>
+          </div>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>1</sup>CAS Key Lab of Network Data Science and Technology, ICT, CAS, University of Chinese Academy of Sciences, </span>
+            <span class="author-block"><sup>2</sup>University of Amsterdam</span>
+          </div>
+          <br />
+          <div class="is-size-5 publication-authors">
+            <b>Sunday November 26 14:45 - 16:30 (GMT+8) @ Rm1</b>
+          </div>
+          <!-- <div class="is-size-5 publication-authors">
+            Zoom link available on <a href="https://underline.io/events/395/sessions?eventSessionId=15330&searchGroup=lecture" target="_blank">Underline</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">About this tutorial</h2>
+        <div class="content has-text-justified">
+          <p>
+            Generative retrieval (GR) has become a highly active area of information retrieval (IR) that has witnessed significant growth recently.
+            Compared to the traditional ``index-retrieve-then-rank'' pipeline, the GR paradigm aims to consolidate all information within a corpus into a single model.
+            Typically, a sequence-to-sequence model is trained to directly map a query to its relevant document identifiers (i.e., docids).
+            This tutorial offers an introduction to the core concepts of the GR paradigm and a comprehensive overview of recent advances in its foundations and applications.
+          </p>
+          <p>
+            We start by providing preliminary information covering foundational aspects and problem formulations of GR.
+            Then, our focus shifts towards recent progress in docid design, training approaches, inference strategies, and the applications of GR.
+            We end by outlining remaining challenges and issuing a call for future GR research.
+            This tutorial is intended to be beneficial to both researchers and industry practitioners interested in developing novel GR solutions or applying them in real-world scenarios.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Schedule</h2>
+        <p>
+          Our tutorial will be held on November 26 14:45 - 16:30 (GMT+8).
+          <em>Slides may be subject to updates.</em>
+        </p>
+
+        <div class="content has-text-justified">
+
+          <style type="text/css">
+          .tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+          .tg .tg-0lax{text-align:left;vertical-align:top}
+          </style>
+          <table class="tg">
+          <thead>
+            <tr>
+              <th class="tg-0pky">Time</th>
+              <th class="tg-0lax">Section</th>
+              <th class="tg-0lax">Presenter</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-0lax">14:45—15:00</td>
+              <td class="tg-0lax">Section 1: Introduction  <a href="./slides/1-intro.pdf" target='_blank'>[Slides]</a></td>
+              <td class="tg-0lax">Yubao</td>
+            </tr>
+            <tr>
+              <td class="tg-0lax">15:00—15:25</td>
+              <td class="tg-0lax">Section 2: Definition & Preliminaries  <a href="./slides/2-definition.pdf" target='_blank'>[Slides]</a></td>
+              <td class="tg-0lax">Ruqing</td>
+            </tr>
+            <tr>
+              <td class="tg-0lax">15:25—15:30</td>
+              <td class="tg-0lax">Q & A Session I</td>
+              <td class="tg-0lax"></td>
+            </tr>
+            <tr>
+              <td class="tg-0lax">15:30—16:00</td>
+              <td class="tg-0lax">Coffee break</td>
+              <td class="tg-0lax"></td>
+            </tr>
+            <tr>
+              <td class="tg-0lax">16:00—16:25</td>
+              <td class="tg-0lax">Section 3: xxx  <a href="./slides/3-xxx.pdf" target='_blank'>[Slides]</a></td>
+              <td class="tg-0lax">Jiafeng</td>
+            </tr>
+            <tr>
+              <td class="tg-0lax">16:25—16:30</td>
+              <td class="tg-0lax">Q & A Session II</td>
+              <td class="tg-0lax"></td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Reading List</h2>
+
+        <p><b>Bold papers</b> are discussed in detail during our tutorial.</p>
+
+        <br />
+        
+        
+        <h3 class="title is-5">Section 3: Architecture</h3>
+
+        <ul>
+          <li><a href="https://arxiv.org/abs/2002.08909"><b>REALM: Retrieval-Augmented Language Model Pre-Training</b></a> (Guu et al., 2020)</li>
+          <li><a href="https://arxiv.org/pdf/2302.00083.pdf"><b>In-Context Retrieval-Augmented Language Models</b></a> (Ram et al., 2023)</li>
+          <li><a href="https://arxiv.org/pdf/2301.12652.pdf"><b>REPLUG: Retrieval-Augmented Black-Box Language Models</b></a> (Shi et al., 2023)</li>
+          <li><a href="https://arxiv.org/pdf/2112.04426.pdf"><b>Improving language models by retrieving from trillions of tokens</b></a> (Borgeaud et al., 2022)</li>
+          <li><a href="https://arxiv.org/pdf/1911.00172.pdf"><b>Generalization through Memorization: Nearest Neighbor Language Models</b></a> (Khandelwal et al., 2020)</li>
+          <li><a href="https://arxiv.org/abs/2305.06983">Active Retrieval Augmented Generation</a> (Jiang et al., 2023)</li>
+          <li><a href="https://arxiv.org/abs/2109.04212">Efficient Nearest Neighbor Language Models</a> (He et al., 2021)</li>
+          <li><a href="https://arxiv.org/abs/2210.15859">You can't pick your neighbors, or can you? When and how to rely on retrieval in the kNN-LM</a> (Drozdov et al., 2022)</li>
+          <li><a href="https://arxiv.org/abs/2201.12431">Neuro-Symbolic Language Modeling with Automaton-augmented Retrieval</a> (Alon et al., 2022)</li>
+          <li><a href="https://arxiv.org/abs/2004.07202">Entities as Experts: Sparse Memory Access with Entity Supervision</a> (Févry et al., 2020)</li>
+          <li><a href="https://arxiv.org/abs/2110.06176">Mention Memory: incorporating textual knowledge into Transformers through entity mention attention</a> (de Jong et al., 2021)</li>
+          <li><a href="https://arxiv.org/abs/2203.08913">Memorizing Transformers</a> (Wu et al., 2022)</li>
+          <li><a href="https://arxiv.org/abs/2305.01625">Unlimiformer: Long-Range Transformers with Unlimited Length Input</a> (Bertsch et al. 2023)</li>
+          <li><a href="https://arxiv.org/abs/2306.13421">Long-range Language Modeling with Self-retrieval</a> (Rubin & Brent, 2023)</li>
+        </ul>
+        
+        <br />
+
+        <h3 class="title is-5">Section 4: Training</h3>
+
+        <ul>
+          <li><a href="https://arxiv.org/abs/2004.04906"><b>Dense Passage Retrieval for Open-Domain Question Answering</b></a> (Karpukhin et al., 2020)</li>
+          <li><a href="https://arxiv.org/abs/2112.04426"><b>Improving language models by retrieving from trillions of tokens</b></a> (Borgeaud et al., 2022 ;also in Section 3)</li>
+          <li><a href="https://arxiv.org/abs/2208.03299"><b>Atlas: Few-shot Learning with Retrieval Augmented Language Models</b></a> (Izacard et al., 2022)</li>
+          <li><a href="https://arxiv.org/abs/2205.12674"><b>Training Language Models with Memory Augmentation</b></a> (Zhong et al., 2022)</li>
+          <li><a href="https://arxiv.org/pdf/2112.09118.pdf">Unsupervised Dense Information Retrieval with Contrastive Learning</a> (Izacard et al., 2022)</li>
+          <li><a href="https://arxiv.org/pdf/2302.00083.pdf">In-Context Retrieval-Augmented Language Models</a> (Ram et al., 2023; also in Section 3)</li>
+          <li><a href="https://arxiv.org/pdf/2301.12652.pdf">REPLUG: Retrieval-Augmented Black-Box Language Models</a> (Shi et al., 2023; also in Section 3)</li>
+          <li><a href="https://arxiv.org/abs/2002.08909">REALM: Retrieval-Augmented Language Model Pre-Training</a> (Guu et al., 2020; also in Section 3)</li>
+          <li><a href="https://arxiv.org/abs/2212.01349">Nonparametric Masked Language Modeling</a> (Min et al., 2023)</li>
+          <li><a href="https://arxiv.org/abs/2306.13421">Long-range Language Modeling with Self-retrieval</a> (Rubin et al., 2023)</li>
+        </ul>
+
+        <br />
+
+        <h3 class="title is-5">Section 5: Application</h3>
+
+        <ul>
+          <li><a href="https://arxiv.org/abs/2208.03299"><b>Atlas: Few-shot Learning with Retrieval Augmented Language Models</b></a> (Izacard et al., 2022; also in Section 4)</li>
+          <li><a href="https://arxiv.org/abs/2203.11147"><b>Teaching language models to support answers with verified quotes</b></a> (Menick et al., 2022)</li>
+          <li><a href="https://arxiv.org/pdf/2301.12652.pdf"><b>REPLUG: Retrieval-Augmented Black-Box Language Models</b></a> (Shi et al., 2023; also in Section 3)</li>
+          <!-- <li><a href="https://arxiv.org/abs/2212.14024"><b>Demonstrate-Search-Predict: Composing retrieval and language models for knowledge-intensive NLP</b></a></li> -->
+          <!-- <li><a href="https://arxiv.org/abs/2305.06311">Automatic evaluations of Attributions of large language models</a></li> -->
+          <!-- <li><a href="https://arxiv.org/abs/2210.08726">RARR: Researching and Revising What Language Models Say, Using Language Models</a></li> -->
+          <!-- <li><a href="https://arxiv.org/abs/2305.14625">kNN-LM Does Not Improve Open-ended Text Generation</a></li> -->
+          <!-- <li><a href="https://arxiv.org/abs/2212.09146">Can Retriever-augmented Language Models Reason? The Blame Game between the Retriever and the Language Model</a></li> -->
+          <li><a href="https://arxiv.org/abs/2205.13792"><b>kNN-Prompt: Nearest Neighbor Zero-Shot Inference</b></a> (Shi et al., 2022)</li>
+          <li><a href="https://arxiv.org/abs/2212.08037"><b>Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Models</b></a> (Bohnet et al., 2023)</li>
+          <li><a href="https://arxiv.org/abs/2207.05987"><b>DocPrompting: Generating Code by Retrieving the Docs</b></a> (Zhou et al., 2022)</li>
+          <li><a href="https://arxiv.org/abs/2212.10511">When Not to Trust Language Models: Investigating Effectiveness of Parametric and Non-Parametric Memories</a> (Mallen et al., 2022)</li>
+          <li><a href="https://arxiv.org/abs/2212.01349">Nonparametric Masked Language Modeling</a> (Min et al., 2023; also in Section 4)</li>
+          <!-- <li><a href="https://arxiv.org/abs/2305.14627">Enabling Large Language Models to Generate Text with Citations</a> (Gao et al., 2023)</li>
+          <li><a href="https://arxiv.org/abs/2304.09848">Evaluating Verifiability in Generative Search Engines</a> (Liu et al., 2023)</li> -->
+          <li><a href="https://arxiv.org/abs/2305.14251">FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation</a> (Min et al., 2023)</li>
+          <!-- <li><a href="https://arxiv.org/abs/2305.14888">Privacy Implications of Retrieval-Based Language Models</a></li> -->
+        </ul>
+
+        <br />
+
+        <h3 class="title is-5">Section 6: Extension</h3>
+        
+        <ul>
+          <li><a href="https://arxiv.org/abs/2107.11976">One Question Answering Model for Many Languages with Cross-lingual Dense Passage Retrieval</a> (Asai et al., 2021)</li>
+          <li><a href="https://arxiv.org/abs/2211.12561">Retrieval-Augmented Multimodal Language Modeling</a> (Yasunaga et al., 2023)</li>
+        </ul>
+        <!--<ul>
+          <li><a href="https://arxiv.org/abs/2107.11976">One Question Answering Model for Many Languages with Cross-lingual Dense Passage Retrieval</a></li>
+          <li><a href="https://arxiv.org/abs/2211.12561">Retrieval-Augmented Multimodal Language Modeling</a></li>
+        </ul> -->
+
+        
+        <br />
+        <h3 class="title is-5">Section 7: Challenges & Opportunities</h3>
+        <ul>
+          <li><a href="https://arxiv.org/abs/2305.14625">KNN-LM Does Not Improve Open-ended Text Generation</a> (Wang et al., 2023)</li>
+          <li><a href="https://arxiv.org/abs/2212.09146">Can Retriever-Augmented Language Models Reason? The Blame Game Between the Retriever and the Language Model</a> (BehnamGhader et al., 2022)</li>
+          <li><a href="https://arxiv.org/abs/2212.14024">Demonstrate-Search-Predict: Composing retrieval and language models for knowledge-intensive NLP</a> (Khattab et al., 2022)</li>
+        </ul>
+      </div>
+    </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{ retrieval-lm-tutorial,
+  author    = { Asai, Akari and Min, Sewon and Zhong, Zexuan and Chen, Danqi },
+  title     = { ACL 2023 Tutorial: Retrieval-based Language Models and Applications },
+  journal   = { ACL 2023 },
+  year      = { 2023 },
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/ACL2023-Retrieval-LM" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
