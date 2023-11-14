@@ -214,8 +214,11 @@
         
         
         <h3 class="title is-5">Section 3: Docid design</h3>
+        <h4 class="title is-5">3.1 Pre-defined docids</h4>
 
-        <h4 class="title is-5">A single docid: Number-based</h4>
+        <h5 class="title is-5">3.1.1 A single docid represents a document</h5>
+
+        <h6 class="title is-5">3.1.1.1 Number-based docids</h6>
         <p><b>Unstructured atomic integers</b></pp>
         <ul>
           <li><a href="https://arxiv.org/pdf/2202.06991.pdf"><b>Transformer Memory as a Differentiable Search Index</b></a> (Tay et al. 2022)</li>
@@ -251,7 +254,7 @@
             </ul>
 
         <br />
-        <h4 class="title is-5">A single docid: Word-based</h4>
+        <h6 class="title is-5">3.1.1.2 Word-based docids</h6>
         <p><b> Titles</b></pp>
           <ul>
             <li><a href="https://arxiv.org/pdf/2010.00904"><b>Autoregressive Entity Retrieval</b></a> (De Cao et al. 2021) </li>
@@ -282,35 +285,50 @@
               <li><a href="https://arxiv.org/pdf/2305.13859"><b>Term-Sets Can Be Strong Document Identifiers For Auto-Regressive Search Engines</b></a> (Zhang et al. 2023) </li>
             </ul>
         <br />
-        <h4 class="title is-5">Multiple docids: Single type (N-garms)</h4> 
+        <h5 class="title is-5">3.1.2 Multiple docids represent a document</h5>
+
+        <h4 class="title is-5">3.1.2.1 Single type</h4> 
+
         <ul>
           <li><a href="https://arxiv.org/pdf/2204.10628"><b>Autoregressive Search Engines: Generating Substrings as Document Identifiers</b></a> (Bevilacqua et al. 2022) </li>
           <li><a href="https://arxiv.org/pdf/2304.14856"><b>A Unified Generative Retriever for Knowledge-Intensive Language Tasks via Prompt Learning</b></a> (Chen et al. 2023b)</li>
           </ul>
           <br />
-        <h4 class="title is-5">Multiple docids: Diverse types</h4>
+        <h5 class="title is-5">3.1.2.2 Diverse types</h5>
         <ul>
           <li><a href="https://arxiv.org/pdf/2305.16675"><b>Multiview Identifiers Enhanced Generative Retrieval</b></a> (Li et al. 2023)</li>
           </ul>
           <br />
 
+        <h4 class="title is-5">3.2 Learnable docids</h4>
+        <ul>
+          <li><a href="https://arxiv.org/pdf/2304.04171.pdf"><b>Learning to Tokenize for Generative Retrieval</b></a> (Sun et al., 2023)</li>
+          <li><a href="https://zihanwang314.github.io/pdf/cikm23.pdf"><b>NOVO: Learnable and Interpretable Document Identifiers for Model-Based IR</b></a> (Wang et al., 2023)</li>
+
+        </ul>
+          <br />
+
         <h3 class="title is-5">Section 4: Training approaches</h3>
-        <h4 class="title is-5">Stationary scenarios</h4>
-        <p><b> Supervised learning</b></pp>
+        <h4 class="title is-5">4.1 Stationary scenarios</h4>
+        <h5 class="title is-5">4.1.1 Supervised learning</h5>
+
           <ul>
             <li><a href="https://arxiv.org/pdf/2202.06991.pdf"><b>Transformer Memory as a Differentiable Search Index</b></a> (Tay et al. 2022)</li>
             <li><a href="https://arxiv.org/pdf/2305.15115"><b>Semantic-Enhanced Differentiable Search Index Inspired by Learning Strategies</b></a> (Tang et al. 2023a) </li>
             <li><a href="https://arxiv.org/pdf/2206.10128.pdf"><b>Bridging the Gap between Indexing and Retrieval for Differentiable Search Index with Query Generation</b></a> (Zhuang et al. 2023)</li>
             <li><a href="https://arxiv.org/pdf/2206.02743.pdf">A Neural Corpus Indexer for Document Retrieval</a> (Wang et al. 2022)</li>
-            </ul>
+            <li><a href="https://arxiv.org/pdf/2305.11841.pdf">How Does Generative Retrieval Scale to Millions of Passages?</a> (Pradeep et al., 2023)</li>
+
+          </ul>
             <br />
-        <p><b> Pre-training</b></pp>
+        <h5 class="title is-5">4.1.2 Pre-training</h5>
+
           <ul>
             <li><a href="https://arxiv.org/pdf/2208.07652"><b>CorpusBrain: Pre-train a Generative Retrieval Model for Knowledge-Intensive Language Tasks</b></a> (Chen et al. 2022b)</li>
         </ul>
 
         <br />
-        <h4 class="title is-5">Dynamic scenarios</h4>
+        <h4 class="title is-5">4.2 Dynamic scenarios</h4>
         <ul>
           <li><a href="https://arxiv.org/pdf/2212.09744.pdf"><b>DSI++: Updating Transformer Memory with New Documents</b></a> (Mehta et al. 2022)</li>
           <li><a href="https://arxiv.org/pdf/2308.14968.pdf"><b>Continual Learning for Generative Retrieval over Dynamic Corpora</b></a> (Chen et al. 2023a)</li>
@@ -321,24 +339,39 @@
         <br />
 
         <h3 class="title is-5">Section 5: Inference strategies</h3>
-        <p><b> Constrained beam search with prefix tree</b></pp>
+        <h4 class="title is-5">5.1 A single docid represents a document</h4>
+        <h5 class="title is-5">5.1.1 Constrained beam search with prefix tree</h5>
+
+
           <ul>
             <li><a href="https://arxiv.org/pdf/2010.00904"><b>Autoregressive Entity Retrieval</b></a> (De Cao et al. 2021) </li>
            </ul>
            <br />
-           <p><b> Constrained greedy search with inverted index</b></pp>
+        <h5 class="title is-5">5.1.2 Constrained greedy search with inverted index</h5>
             <ul>
               <li><a href="https://arxiv.org/pdf/2305.13859"><b>Term-Sets Can Be Strong Document Identifiers For Auto-Regressive Search Engines</b></a> (Zhang et al. 2023) </li>
             </ul>
             <br />
-            <p><b> Constrained beam search with FM-index</b></pp>
-              <ul>
-                <li><a href="https://arxiv.org/pdf/2204.10628"><b>Autoregressive Search Engines: Generating Substrings as Document Identifiers</b></a> (Bevilacqua et al. 2022) </li>
-              </ul>
-              <br />
-        <h3 class="title is-5">Section 6: Applications</h3>
+            
 
-        <p><b> Knowledge-intensive language tasks (KILT)</b></pp>
+        <h4 class="title is-5">5.2 Multiple docids represent a document</h4>
+        <h5 class="title is-5">5.2.1 Constrained beam search with FM-index</h5>
+          <ul>
+            <li><a href="https://arxiv.org/pdf/2204.10628"><b>Autoregressive Search Engines: Generating Substrings as Document Identifiers</b></a> (Bevilacqua et al. 2022) </li>
+          </ul>
+
+          <h5 class="title is-5">5.2.2 Aggregation functions</h5>
+            <ul>
+              <li><a href="https://arxiv.org/pdf/2204.10628"><b>Autoregressive Search Engines: Generating Substrings as Document Identifiers</b></a> (Bevilacqua et al. 2022) </li>
+              <li><a href="https://arxiv.org/pdf/2305.16675"><b>Multiview Identifiers Enhanced Generative Retrieval</b></a> (Li et al. 2023)</li>
+            </ul>
+          <br />
+
+        <h3 class="title is-5">Section 6: Applications</h3>
+        <h4 class="title is-5">6.1 Knowledge-intensive language tasks (KILT)</h4>
+
+
+        <!-- <p><b> Knowledge-intensive language tasks (KILT)</b></pp> -->
           <ul>
             <li><a href="https://arxiv.org/pdf/2010.00904"><b>Autoregressive Entity Retrieval</b></a> (De Cao et al. 2021) </li>
             <li><a href="https://arxiv.org/pdf/2204.05511"><b>GERE: Generative evidence retrieval for fact verification</b></a> (Chen et al. 2022a)</li>
@@ -349,18 +382,24 @@
 
           </ul>
             <br />
-            <p><b> Multi-hop retrieval</b></pp>
+            <h4 class="title is-5">6.2 Multi-hop retrieval</h4>
+
+            <!-- <p><b> Multi-hop retrieval</b></pp> -->
             <ul>
               <li><a href="https://arxiv.org/pdf/2204.13596.pdf"><b>Generative Multi-hop Retrieval</b></a> (Lee et al. 2022)</li>
             </ul>
             <br />
-            <p><b> Recommendation</b></pp>
+            <h4 class="title is-5">6.3 Recommendation</h4>
+
+            <!-- <p><b> Recommendation</b></pp> -->
               <ul>
                 <li><a href="https://arxiv.org/pdf/2305.05065.pdf"><b>Recommender Systems with Generative Retrieval</b></a> (Rajput et al. 2023)</li>
                 <li><a href="https://arxiv.org/pdf/2309.13375.pdf">Generative Retrieval with Semantic Tree-Structured Item Identifiers via Contrastive Learning</a> (Si et al. 2023 )</li>
               </ul>
               <br />
-            <p><b> Code retrieval</b></pp>
+            <h4 class="title is-5">6.4 Code retrieval</h4>
+
+            <!-- <p><b> Code retrieval</b></pp> -->
               <ul>
                 <li><a href="https://arxiv.org/pdf/2210.00328.pdf"><b>CodeDSI: Differentiable Code Search</b></a> (Nadeem et al. 2022)</li>
               </ul>
